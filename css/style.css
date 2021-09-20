@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'genius-space-green genius-space-blue' 'genius-space-yellow genius-space-red';
+    grid-gap: 20px;
+    border: 1px solid #ffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.452);
+}
+
+.center-content {
+    position: absolute;
+    background-color: #000000;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;;
+    margin: auto;
+    background-image: url('https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #ccc;
+}
+
+.genius-space-green {
+    grid-area: genius-space-green;
+    background-color: rgb(0, 128, 0);
+    border: 6px solid #000000;
+    border-top-left-radius: 100%;
+    
+}
+
+.genius-space-blue {
+    grid-area: genius-space-blue;
+    background-color: rgb(0, 0, 255);
+    border: 6px solid #000000;
+    border-top-right-radius: 100%;
+    
+}
+
+.genius-space-yellow {
+    grid-area: genius-space-yellow;
+    background-color: rgb(255, 255, 0);
+    border: 6px solid #000000;
+    border-bottom-left-radius: 100%;
+    
+}
+
+
+.genius-space-red {
+    grid-area: genius-space-red;
+    background-color: rgb(255, 0, 0);
+    border: 6px solid #000000;
+    border-bottom-right-radius: 100%;
+    
+}
+
+.good-choice { 
+    background-image: url('https://i.pinimg.com/originals/b7/45/c1/b745c139d640faef008b412befdc37fa.png');
+    background-position:center;
+    background-size: cover;
+}
+
+.bad-choice { 
+    background-image: url('https://www.nicepng.com/png/full/41-416284_doh-homer-simpson-quotes-on-quotestopics-homer-simpson.png');
+    background-position:center;
+    background-size: cover;
+}
+
+.selected {
+    background-image: url('https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp');
+    background-position:center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .genius {
+        width: 300px;
+        height:300px;
+    }
+
+    .center-content {
+        display: none;
+    }
+  }
