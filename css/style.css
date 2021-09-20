@@ -2,10 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background: #f8f8f8;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #2685bf;
+    box-shadow: 0 0 25px black;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+header .logo {
+    width: 50%;
+    margin: auto 0;
+    padding: 10px;
+}
+
+header .logo > a img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+header nav .menu {
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+}
+
+header nav .menu ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+header nav .menu ul li a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+header nav .menu ul li a:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+}
+
+header > label[for="menuMobile"] {
+    display: none;
+    position: absolute;
+    right:0;
+    padding: 5px;
+    color: rgb(255, 255, 0);;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+header #menuMobile {
+    display: none;
+}
+
+header nav .menu-mobile {
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 11px 25px black;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+header nav .menu-mobile ul {
+    position: relative;
+    list-style: none;
+    margin-top: -100%;
+    transition: all .4s;
+}
+
+header nav .menu-mobile ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: #2685bf;
+    display: block;
+    text-align: center;
 }
 
 main {
@@ -13,6 +108,7 @@ main {
     width: 100vw;
     justify-content: center;
     align-items: center;
+    margin: 25px 0;
 }
 
 .genius {
@@ -65,7 +161,6 @@ main {
     
 }
 
-
 .genius-space-red {
     grid-area: genius-space-red;
     background-color: rgb(255, 0, 0);
@@ -92,6 +187,20 @@ main {
     background-size: cover;
 }
 
+@media only screen and (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    header > label[for="menuMobile"] {
+        display: block;
+    }
+
+    #menuMobile:checked ~ .menu-mobile ul {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .genius {
         width: 300px;
@@ -101,4 +210,5 @@ main {
     .center-content {
         display: none;
     }
-  }
+
+}

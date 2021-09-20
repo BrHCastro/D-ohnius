@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Genius</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-            </ul>
+        <input type="checkbox" id="menuMobile" />
+        <label for="menuMobile">&#9776;</label>
+        <nav class="center">
+            <div class="logo">
+                <a href="/"><img src="/assets/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -25,8 +46,10 @@
         </div>
     </main>
     <footer>
-        <span>Created with ❤ by <a href="https://github.com/brhcastro/" target="_blank"><strong>BrHCastro</strong></a></span>
+        <span>Created with ❤ by <a href="https://github.com/brhcastro/"
+                target="_blank"><strong>BrHCastro</strong></a></span>
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

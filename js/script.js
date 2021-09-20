@@ -116,3 +116,6 @@ yellow.addEventListener('click', () => click(2))
 red.addEventListener('click', () => click(3))
 
 playGame()
+
+
+// Nome D'ohnius
