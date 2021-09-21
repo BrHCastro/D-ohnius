@@ -7,11 +7,25 @@
 
 body {
     background: #f8f8f8;
+    overflow: hidden;
 }
 
 .center {
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.checked {
+    margin-top: 0!important;
+}
+
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
 }
 
 header {
@@ -46,19 +60,18 @@ header nav .menu {
     padding: 10px;
 }
 
-header nav .menu ul li {
+header nav .menu > ul li {
     display: inline-block;
-    margin: 0 8px;
+    padding: 0 8px;
 }
 
-header nav .menu ul li a {
+header nav .menu > ul li a {
     color: #ffff;
     text-decoration: none;
 }
 
 
-header nav .menu ul li a:hover {
-    font-weight: bold;
+header nav .menu > ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
@@ -77,6 +90,13 @@ header #menuMobile {
     display: none;
 }
 
+header nav .menu-mobile ul {
+    position: relative;
+    list-style: none;
+    transition: all .4s;
+    margin-top: -100%;
+}
+
 header nav .menu-mobile {
     display: flex;
     justify-content: center;
@@ -86,13 +106,8 @@ header nav .menu-mobile {
     position: absolute;
     width: 100%;
     background-color: #ffffff;
-}
-
-header nav .menu-mobile ul {
-    position: relative;
-    list-style: none;
-    margin-top: -100%;
-    transition: all .4s;
+    left: 0;
+    z-index: 99999;
 }
 
 header nav .menu-mobile ul li a {
@@ -142,7 +157,7 @@ main {
     background-color: rgb(0, 128, 0);
     border: 6px solid #000000;
     border-top-left-radius: 100%;
-    
+    cursor: pointer;
 }
 
 .genius-space-blue {
@@ -150,7 +165,7 @@ main {
     background-color: rgb(0, 0, 255);
     border: 6px solid #000000;
     border-top-right-radius: 100%;
-    
+    cursor: pointer;
 }
 
 .genius-space-yellow {
@@ -158,7 +173,7 @@ main {
     background-color: rgb(255, 255, 0);
     border: 6px solid #000000;
     border-bottom-left-radius: 100%;
-    
+    cursor: pointer;
 }
 
 .genius-space-red {
@@ -166,7 +181,7 @@ main {
     background-color: rgb(255, 0, 0);
     border: 6px solid #000000;
     border-bottom-right-radius: 100%;
-    
+    cursor: pointer;
 }
 
 .good-choice { 
@@ -187,6 +202,32 @@ main {
     background-size: cover;
 }
 
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 25px;
+    color: #2685bf;
+}
+
+footer span > strong {
+    color: rgb(255, 0, 0);
+}
+
+footer span > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2685bf;
+}
+
+footer .social {
+    margin-top: 20px;
+}
+footer .social a > img {
+    width: 30px;
+}
+
 @media only screen and (max-width: 700px) {
     .menu {
         display: none;
@@ -194,10 +235,6 @@ main {
 
     header > label[for="menuMobile"] {
         display: block;
-    }
-
-    #menuMobile:checked ~ .menu-mobile ul {
-        margin-top: 0;
     }
 }
 
