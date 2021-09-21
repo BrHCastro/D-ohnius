@@ -49,8 +49,6 @@ let checkOrder = () => {
         createElementColor().forEach(element => {
             element.classList.add('good-choice')
         })
-
-        // alert(`Pontuação: ${score} \n Você acertou! Iniciando proximo nível 🚀`)
         
         setTimeout(() => { 
             createElementColor().forEach(element => {
@@ -116,6 +114,3 @@ yellow.addEventListener('click', () => click(2))
 red.addEventListener('click', () => click(3))
 
 playGame()
-
-
-// Nome D'ohnius
