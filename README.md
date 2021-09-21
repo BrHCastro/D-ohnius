@@ -5,7 +5,7 @@
 # Bem-vindo(a) ao The D'ohnius!
 
 > Projeto desenvolvido durante o curso **Criando seu jogo de memória estilo Genius** da [Digital Innovation One.](https://digitalinnovation.one/) <br>
-> O objetivo era desenvolver um jogo estilo **GENIUS**, Desafio cumprido com um toque especial
+> O objetivo era desenvolver um jogo estilo **GENIUS**, Desafio cumprido com um toque especial.
 
 ## 🛠 Ferramentas:
 
@@ -19,7 +19,7 @@
 <br />
 
 ## 🎨 Autor:
-Henrique de Castr
+Henrique de Castro
 <br />
 <br />
 
