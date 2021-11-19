@@ -1,251 +1,253 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background: #f8f8f8;
-    overflow: hidden;
+  background: #f8f8f8;
+  overflow: hidden;
 }
 
 .center {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .checked {
-    margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 .overlay {
-    display: none;
-    background-color: rgba(0, 0, 0, .4);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background-color: #2685bf;
-    box-shadow: 0 0 25px black;
+  width: 100%;
+  height: 70px;
+  background-color: #2685bf;
+  box-shadow: 0 0 25px black;
 }
 
 header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 header .logo {
-    width: 50%;
-    margin: auto 0;
-    padding: 10px;
+  width: 50%;
+  margin: auto 0;
+  padding: 10px;
 }
 
 header .logo > a img {
-    width: 100%;
-    max-width: 250px;
-    margin-top: 10px;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
 }
 
 header nav .menu {
-    width: 50%;
-    text-align: right;
-    padding: 10px;
+  width: 50%;
+  text-align: right;
+  padding: 10px;
 }
 
 header nav .menu > ul li {
-    display: inline-block;
-    padding: 0 8px;
+  display: inline-block;
+  padding: 0 8px;
 }
 
 header nav .menu > ul li a {
-    color: #ffff;
-    text-decoration: none;
+  color: #ffff;
+  text-decoration: none;
 }
 
-
 header nav .menu > ul li a:hover {
-    color: rgb(255, 255, 0);
+  color: rgb(255, 255, 0);
 }
 
 header > label[for="menuMobile"] {
-    display: none;
-    position: absolute;
-    right:0;
-    padding: 5px;
-    color: rgb(255, 255, 0);;
-    font-size: 30px;
-    cursor: pointer;
-    margin: 10px;
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  color: rgb(255, 255, 0);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
 }
 
 header #menuMobile {
-    display: none;
+  display: none;
 }
 
 header nav .menu-mobile ul {
-    position: relative;
-    list-style: none;
-    transition: all .4s;
-    margin-top: -100%;
+  position: relative;
+  list-style: none;
+  transition: all 0.4s;
+  margin-top: -100%;
 }
 
 header nav .menu-mobile {
-    display: flex;
-    justify-content: center;
-    top: 70px;
-    border-radius: 8px;
-    box-shadow: 0 11px 25px black;
-    position: absolute;
-    width: 100%;
-    background-color: #ffffff;
-    left: 0;
-    z-index: 99999;
+  display: flex;
+  justify-content: center;
+  top: 70px;
+  border-radius: 8px;
+  box-shadow: 0 11px 25px black;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  z-index: 99999;
 }
 
 header nav .menu-mobile ul li a {
-    padding: 15px;
-    text-decoration: none;
-    color: #2685bf;
-    display: block;
-    text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #2685bf;
+  display: block;
+  text-align: center;
 }
 
 main {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
 }
 
 .genius {
-    display: grid;
-    grid-template-areas: 'genius-space-green genius-space-blue' 'genius-space-yellow genius-space-red';
-    grid-gap: 20px;
-    border: 1px solid #ffff;
-    background-color: #ffffff;
-    border-radius: 100%;
-    width: 600px;
-    height: 600px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.452);
+  position: relative;
+  display: grid;
+  grid-template-areas: "genius-space-green genius-space-blue" "genius-space-yellow genius-space-red";
+  grid-gap: 20px;
+  border: 1px solid #ffff;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.452);
 }
 
 .center-content {
-    position: absolute;
-    background-color: #000000;
-    z-index: 1;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;;
-    margin: auto;
-    background-image: url('https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid #ccc;
+  position: absolute;
+  background-color: #000000;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  margin: auto;
+  background-image: url("https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #ccc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .genius-space-green {
-    grid-area: genius-space-green;
-    background-color: rgb(0, 128, 0);
-    border: 6px solid #000000;
-    border-top-left-radius: 100%;
-    cursor: pointer;
+  grid-area: genius-space-green;
+  background-color: rgb(0, 128, 0);
+  border: 6px solid #000000;
+  border-top-left-radius: 100%;
+  cursor: pointer;
 }
 
 .genius-space-blue {
-    grid-area: genius-space-blue;
-    background-color: rgb(0, 0, 255);
-    border: 6px solid #000000;
-    border-top-right-radius: 100%;
-    cursor: pointer;
+  grid-area: genius-space-blue;
+  background-color: rgb(0, 0, 255);
+  border: 6px solid #000000;
+  border-top-right-radius: 100%;
+  cursor: pointer;
 }
 
 .genius-space-yellow {
-    grid-area: genius-space-yellow;
-    background-color: rgb(255, 255, 0);
-    border: 6px solid #000000;
-    border-bottom-left-radius: 100%;
-    cursor: pointer;
+  grid-area: genius-space-yellow;
+  background-color: rgb(255, 255, 0);
+  border: 6px solid #000000;
+  border-bottom-left-radius: 100%;
+  cursor: pointer;
 }
 
 .genius-space-red {
-    grid-area: genius-space-red;
-    background-color: rgb(255, 0, 0);
-    border: 6px solid #000000;
-    border-bottom-right-radius: 100%;
-    cursor: pointer;
+  grid-area: genius-space-red;
+  background-color: rgb(255, 0, 0);
+  border: 6px solid #000000;
+  border-bottom-right-radius: 100%;
+  cursor: pointer;
 }
 
-.good-choice { 
-    background-image: url('https://i.pinimg.com/originals/b7/45/c1/b745c139d640faef008b412befdc37fa.png');
-    background-position:center;
-    background-size: cover;
+.good-choice {
+  background-image: url("https://i.pinimg.com/originals/b7/45/c1/b745c139d640faef008b412befdc37fa.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.bad-choice { 
-    background-image: url('https://www.nicepng.com/png/full/41-416284_doh-homer-simpson-quotes-on-quotestopics-homer-simpson.png');
-    background-position:center;
-    background-size: cover;
+.bad-choice {
+  background-image: url("https://www.nicepng.com/png/full/41-416284_doh-homer-simpson-quotes-on-quotestopics-homer-simpson.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .selected {
-    background-image: url('https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp');
-    background-position:center;
-    background-size: cover;
+  background-image: url("https://sticker.nyc3.cdn.digitaloceanspaces.com/20210881/file_2194842_512x512.webp");
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    padding: 25px;
-    color: #2685bf;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 25px;
+  color: #2685bf;
 }
 
 footer span > strong {
-    color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 footer span > a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #2685bf;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2685bf;
 }
 
 footer .social {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 footer .social a > img {
-    width: 30px;
+  width: 30px;
 }
 
 @media only screen and (max-width: 700px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    header > label[for="menuMobile"] {
-        display: block;
-    }
+  header > label[for="menuMobile"] {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .genius {
-        width: 300px;
-        height:300px;
-    }
+  .genius {
+    width: 300px;
+    height: 300px;
+  }
 
-    .center-content {
-        display: none;
-    }
-
+  .center-content {
+    display: none;
+  }
 }
